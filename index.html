@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking CSS file -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Include FontAwesome -->
+    <script src="script.js" defer></script> <!-- Link to the separate JavaScript file -->
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="https://i.pinimg.com/736x/51/14/55/511455dca5119ae5381547286b9d6abb.jpg" alt="Navbar Logo" class="navbar-logo">
+            <div class="logo">Fitness Tracker</div>
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Log Workout</a>
+            <a href="#">View Progress</a>
+            <a href="#">Profile</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="button">Search</button>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <h1>Track Your Fitness Progress</h1>
+
+        <div class="tracker-form">
+            <h2>Log Your Workout</h2>
+            <form id="workout-form">
+                <input type="text" id="workout-name" placeholder="Workout Name" required>
+                <input type="number" id="duration" placeholder="Duration (minutes)" required>
+                <input type="number" id="calories" placeholder="Calories Burned" required>
+                <button type="submit">Log Workout</button>
+            </form>
+        </div>
+        
+        <div class="progress-container">
+            <h2>Workout Log</h2>
+            <ul id="workout-log">
+                <!-- Workout entries will appear here -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-image">
+                <img src="https://i.pinimg.com/736x/51/14/55/511455dca5119ae5381547286b9d6abb.jpg" alt="Footer Logo">
+            </div>
+            <div class="footer-sections">
+                <div class="footer-section contact-info">
+                    <h3>Contact Us</h3>
+                    <p>Email: <a href="mailto:support@fitnesstracker.com">support@fitnesstracker.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">+123-456-7890</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Support Center</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-sections">
+                <div class="footer-bottom-section">
+                    <p>&copy; 2024 Fitness Tracker. All rights reserved.</p>
+                </div>
+                <div class="footer-bottom-section">
+                    <ul class="legal-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
